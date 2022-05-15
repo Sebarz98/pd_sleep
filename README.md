@@ -1,8 +1,8 @@
 # Parkinson's Disease and Sleep
 
-This study aims to study the correlation between sleep and Parkinson's disease.
+This study aims to study the correlation between chronotype, sleep quality and Parkinson's disease.
 
-Sebastiano Vecca, Taha Binhuraib
+Sebastiano Vacca, Taha Binhuraib
 
 ## Dependencies
 * **OS**: Linux or macOS
