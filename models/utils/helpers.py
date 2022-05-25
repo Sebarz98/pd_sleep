@@ -1,10 +1,13 @@
 import math
 
 import pandas as pd
+from sklearn.preprocessing import LabelEncoder
 
 
 def train_test(data: pd.DataFrame):
+    
     """Return train-test subjects"""
+
     pd_patients = data[:14]
     sleep_patients = data[14:]
 
@@ -26,3 +29,25 @@ def train_test(data: pd.DataFrame):
     test = pd.concat([test_pd, test_sleep])
 
     return train, test
+
+def drop_categorical(data: pd.DataFrame):
+        
+    '''Drop categorical variables + Age & PSQI'''
+
+    categ = ['Subjectt','Sex','Chr']
+    le = LabelEncoder()
+    data[categ] = data[categ].apply(le.fit_transform)
+
+    for column in data.columns:
+        if data[column].dtype == "object":
+            data[column] = data[column].apply(lambda x: str(x.replace(",", "")))
+            data[column] =data[column].astype("float")
+
+    X = data.loc[:, data.columns.drop(["Subjectt", "Age", "Sex", "Chr", "PD", "PSQI"])]
+    
+    return X
+
+
+
+
+
