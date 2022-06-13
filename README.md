@@ -56,6 +56,7 @@ SBM has been conducted on MATLAB, with the FUSION toolbox. The inputs are the sa
 Firstly, we ran the analysis with only one feature, the GM, and then with both GM and WM.
 Only the components with a p.value of <0.001 have been reported here.
 The regions have been identified based on the Talairach Coordinates, where the images have been converted to Z-scores with a threshold of 2.
+
 GM ONLY
 7th Independt Component(IC): The Lentiform Nucleus is the area where the HC show the highest GM density compared to PD, while the Precentral Gyrus the lowest.
 
@@ -63,6 +64,7 @@ GM ONLY
 
 GM&WM
 1st IC: The Lentiform Nucleus is the area where the HC show the highest GM density compared to PD, while the Middle Frontal Gyrus the lowest.
+
 2nd IC: Same as the 1st as far as the two regions with the most differences go.
 
 <img width="760" alt="Screenshot 2022-06-13 at 10 35 16" src="https://user-images.githubusercontent.com/70062910/173338905-a1abf8c5-d019-4333-ace0-422ec7e9478f.png">
