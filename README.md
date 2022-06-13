@@ -57,12 +57,12 @@ Firstly, we ran the analysis with only one feature, the GM, and then with both G
 Only the components with a p.value of <0.001 have been reported here.
 The regions have been identified based on the Talairach Coordinates, where the images have been converted to Z-scores with a threshold of 2.
 
-GM ONLY
-7th Independt Component(IC): The Lentiform Nucleus is the area where the HC show the highest GM density compared to PD, while the Precentral Gyrus the lowest.
+#### GM ONLY
+7th Independent Component(IC): The Lentiform Nucleus is the area where the HC show the highest GM density compared to PD, while the Precentral Gyrus the lowest.
 
 <img width="760" alt="Screenshot 2022-06-13 at 09 24 32" src="https://user-images.githubusercontent.com/70062910/173338776-2c5fa667-42a2-42d2-89be-e49122e72746.png">
 
-GM&WM
+#### GM&WM
 1st IC: The Lentiform Nucleus is the area where the HC show the highest GM density compared to PD, while the Middle Frontal Gyrus the lowest.
 
 2nd IC: Same as the 1st as far as the two regions with the most differences go.
