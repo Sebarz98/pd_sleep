@@ -22,8 +22,8 @@ cd pd_sleep
 ### Anaconda
 You need to install [Anaconda](https://www.anaconda.com/products/distribution), then run below:
 ```bash
-conda create --name energy python=3.8
-conda activate energy
+conda create --name pd python=3.8
+conda activate pd
 pip install -r requirements.txt
 ```
 
