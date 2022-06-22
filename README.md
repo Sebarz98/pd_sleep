@@ -55,7 +55,7 @@ SBM consists in applying PCA/ICA (through the infomax algorithm) to the smoothed
 SBM has been conducted on MATLAB, with the FUSION toolbox. The inputs are the same of the VBM.
 Firstly, we ran the analysis with only one feature, the GM, and then with both GM and WM.
 Best component for each feature combination is deter- mined using two sample t-test on the mixing coefficients.
-Only the components with a p.value of <0.001 have been reported here.
+Only the components with a p.value of <0.05 have been reported here.
 The regions have been identified based on the Talairach Coordinates, where the voxels above threshold |Z| > 1.5 were converted. 
 #### GM ONLY
 7th Independent Component(IC): The Lentiform Nucleus is the area where the HC show the highest GM density compared to PD, while the Precentral Gyrus the lowest.
@@ -77,10 +77,12 @@ The regions have been identified based on the Talairach Coordinates, where the v
 <img width="753" alt="Screenshot 2022-06-13 at 10 35 54" src="https://user-images.githubusercontent.com/70062910/173338961-3c5fb644-f62f-4f31-97be-bd5547816c08.png">
 
 ### Source-Based-Morphometry(SBM) - Part 2
-The analysis consisted in comparing the Gray Matter of 11 PD patients (median age 39 years) vs 11 Healthy controls with an Early Chronotype (EC - median age 31 years) and other 11 with a Late Chronotype (LC - median age 31 years). 
-Only the components with a p.value of <0.001 have been reported here. The regions have been identified based on the Talairach Coordinates, where the voxels above threshold |Z| > 1.5 were converted. The regions with the maximum t-value have been reported. 
+The analysis consisted in comparing the Grey and White Matter of 11 PD patients (median age 39 years) vs 11 Healthy controls with an Early Chronotype (EC - median age 31 years) and other 11 with a Late Chronotype (LC - median age 31 years). 
+Only the components with a p.value of <0.05 have been reported here. The regions have been identified based on the Talairach Coordinates, where the voxels above threshold |Z| > 1.5 were converted. The regions with the maximum t-value have been reported. 
 
-#### PD vs EC
+#### GM ONLY
+
+##### PD vs EC
 7th Independent Component(IC): The Middle and Inferior Temporal Gyrus are the areas where the EC show the highest GM density compared to PD, while the Uncus the lowest.
 
 <img width="753" alt="Screenshot 2022-06-20 at 08 09 13" src="https://user-images.githubusercontent.com/70062910/174615281-c654d3b1-e335-4f67-bed8-7b297950e69b.png">
@@ -89,11 +91,41 @@ Only the components with a p.value of <0.001 have been reported here. The region
 
 <img width="753" alt="Screenshot 2022-06-20 at 08 09 13" src="https://user-images.githubusercontent.com/70062910/174616466-dad90913-5292-407c-b33c-1b55e5852bbb.png">
 
-#### PD vs LC
+##### PD vs LC
 7th Independent Component(IC): The Middle and Inferior Temporal Gyrus are the areas where the LC show the highest GM density compared to PD, while the Uncus the lowest.
 
 <img width="737" alt="Screenshot 2022-06-20 at 08 16 40" src="https://user-images.githubusercontent.com/70062910/174617951-fc7a12b8-19e0-4142-a563-0ad1fd050424.png">
 
-5th Independent Component(IC): The Angula Gyrus and Parahippocampal Gyrus are the areas where the LC show the highest GM density compared to PD, while the Middle and Inferior Frontal Gyri the lowest.
+5th Independent Component(IC): The Angular Gyrus and Parahippocampal Gyrus are the areas where the LC show the highest GM density compared to PD, while the Middle and Inferior Frontal Gyri the lowest.
 
 <img width="743" alt="Screenshot 2022-06-20 at 08 16 52" src="https://user-images.githubusercontent.com/70062910/174618893-4d8e8665-f9ec-40e3-8081-e6dc0ae09c2b.png">
+
+#### GM & WM
+
+##### PD vs EC
+
+8th IC & GM: The Lentiform Nucleus and Brodmann area 13 are the areas where the LC show the highest GM density compared to PD, while the Cerebellar Tonsil and the Superior Frontal Gyrus the lowest.
+
+<img width="719" alt="Screenshot 2022-06-20 at 16 58 06" src="https://user-images.githubusercontent.com/70062910/174976090-6cb7fa46-86ca-4572-97e0-144d81c388ec.png">
+
+8th IC & WM: The Medial Frontal Gyrus and the Sub-Gyral Brodmann areas 6,32, 37 and 40 are the areas where the LC show the highest GM density compared to PD, while the Middle Temporal Gyrus and the Sub-Gyral area 8 the lowest.
+
+<img width="703" alt="Screenshot 2022-06-20 at 16 58 17" src="https://user-images.githubusercontent.com/70062910/174976128-67629e63-d31c-4aeb-8ec6-51534b6c9b7c.png">
+
+##### PD vs LC
+
+4th IC & GM: The Sub-Gyral Brodmann areas 6, 30 and 40 are the areas where the LC show the highest GM density compared to PD, while the Middle Temporal Gyrus and the Supramarginal Gyrus the lowest.
+
+<img width="712" alt="Screenshot 2022-06-20 at 16 46 26" src="https://user-images.githubusercontent.com/70062910/174976830-3bfd044b-f83e-4804-a9db-30eb17b7749f.png">
+
+4th IC & WM: The Sub-Gyral Brodmann areas 6, 7, 8 and 21 and the Middle Occipital Gyrus are the areas where the LC show the highest GM density compared to PD, while the Inferior and Superior Parietal Lobule the lowest.
+
+<img width="699" alt="Screenshot 2022-06-20 at 16 46 35" src="https://user-images.githubusercontent.com/70062910/174976839-9cc7df52-77c6-4f94-a6a6-78af642b0c93.png">
+
+7th IC & GM: The Thalamus and Brodmann areas 6, 20, 21 and 40 are the areas where the LC show the highest GM density compared to PD, while the Lingual Gyrus and the Inferior Occipital Gyrus the lowest.
+
+<img width="704" alt="Screenshot 2022-06-20 at 16 46 43" src="https://user-images.githubusercontent.com/70062910/174979151-0532f78d-4367-451b-af8f-93b57721b7e4.png">
+
+7th IC & WM: The Medial Frontal Gyrus and the Inferior Parietal Lobule are the areas where the LC show the highest GM density compared to PD, while the Lingual Gyrus and the Middle Frontal Gyrus the lowest.
+
+<img width="697" alt="Screenshot 2022-06-20 at 16 46 49" src="https://user-images.githubusercontent.com/70062910/174979168-c854e18b-5f95-437f-833a-355b6f6f6338.png">
