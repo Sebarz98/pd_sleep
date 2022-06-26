@@ -76,12 +76,15 @@ The regions have been identified based on the Talairach Coordinates, where the v
 
 #### GM&WM
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> ef524c141efa9c292b7ad2e9ff20613fbda019ca
 1st IC: The Lentiform Nucleus is the area where the HC show the highest GM density compared to PD, while the Middle Frontal Gyrus the lowest.
 
 2nd IC: Same as the 1st as far as the two regions with the most differences go.
+=======
+>>>>>>> 230e17aeb66cd71c6ab6617bc736a38fcce64b99
 
 1st IC & Feature 1: The Lentiform Nucleus is the area where the HC show the highest GM density compared to PD, while the Middle Frontal Gyrus the lowest.
 
