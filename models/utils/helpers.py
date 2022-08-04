@@ -4,8 +4,8 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
 
-def train_test(data: pd.DataFrame):
-    
+def train_test(data: pd.DataFrame) -> pd.DataFrame:
+
     """Return train-test subjects"""
 
     pd_patients = data[:14]
@@ -30,24 +30,32 @@ def train_test(data: pd.DataFrame):
 
     return train, test
 
-def drop_categorical(data: pd.DataFrame):
-        
-    '''Drop categorical variables + Age & PSQI'''
 
-    categ = ['Subjectt','Sex','Chr']
+def drop_categorical(data: pd.DataFrame) -> pd.DataFrame:
+
+    """Drop categorical variables + Age & PSQI"""
+
+    categ = ["Subjectt", "Sex", "Chr"]
     le = LabelEncoder()
     data[categ] = data[categ].apply(le.fit_transform)
 
     for column in data.columns:
         if data[column].dtype == "object":
             data[column] = data[column].apply(lambda x: str(x.replace(",", "")))
-            data[column] =data[column].astype("float")
+            data[column] = data[column].astype("float")
 
     X = data.loc[:, data.columns.drop(["Subjectt", "Age", "Sex", "Chr", "PD", "PSQI"])]
-    
+
     return X
 
 
+def clean_columns(df: pd.DataFrame) -> pd.DataFrame:
+    for column in df.columns:
+        if df[column].dtype == "object":
+            df[column] = df[column].apply(lambda x: str(x.replace(",", "")))
+            df[column] = df[column].astype("float")
 
+    df.drop(df.columns[df.columns.str.contains("unnamed", case=False)], axis=1, inplace=True)
+    normalized_df = (df - df.min()) / (df.max() - df.min())
 
-
+    return normalized_df
