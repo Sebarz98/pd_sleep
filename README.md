@@ -38,6 +38,8 @@ You can run our python deep and machine learning model by running the following:
 cd model
 # random_forest 
 python random_forest.py
+# Autoencoder
+python autoencoders.py
 ```
 ## Evaluation
 ### Voxel-Based-Morphometry(VBM)
